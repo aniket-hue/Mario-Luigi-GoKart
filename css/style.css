@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.h1 {
+  position: relative;
+  /* top: 10px; */
+  padding: 0;
+  margin: 0;
+  color: #000;
+  z-index: 100;
+
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+.container h1 {
+  font-family: 'Bangers', cursive;
+  text-align: center;
+}
+
+.sky {
+  position: relative;
+  height: 60%;
+  width: 100%;
+  background-color: lightblue;
+  padding: 0;
+  margin: 0;
+}
+
+.cloud {
+  position: relative;
+  left: -300px;
+  animation: cloudM 60s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.cloud2 {
+  top: 100px;
+  left: -300px;
+  position: absolute;
+  animation: cloudM 50s;
+  opacity: .5;
+  transform: scale(.8, .8);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.cloud3 {
+  top: 120px;
+  left: -300px;
+  position: absolute;
+  animation: cloudM 40s;
+  opacity: .3;
+  z-index: 3;
+  transform: scale(.4, .4);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+
+.road {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  background-color: gray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  background-color: #686868;
+}
+
+.divide {
+  position: absolute;
+  top: 40%;
+  height: 5px;
+  border: 10px dashed white;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.img1 {
+  position: absolute;
+  top: -10px;
+  left: -150px;
+  transform: scale(.8, .8);
+  animation: drive;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.img2 {
+  left: -150px;
+  position: absolute;
+  top: 100px;
+  transform: scale(.8, .8);
+
+  animation: drive;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes cloudM {
+  from {
+    margin-left: 0%;
+  }
+
+  to {
+    margin-left: 130%;
+  }
+}
+
+@keyframes drive {
+  from {
+    margin-left: 0%;
+  }
+
+  to {
+    margin-left: 150%;
+  }
+}
